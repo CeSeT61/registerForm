@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Kayıt Olunuz</h1>
+        </div>
+        <hr>
+        <div class="formlar">
+
+            <div class="bilgiler">
+                <form action="php.php">
+                    <input type="text" required placeholder="İsim Giriniz.."><br>
+                    <input type="email" required placeholder="Email Giriniz.."><br>
+    
+                    <select name="sehir" id="sehirler">
+                        <option value="sehirSec">Şehir Seçiniz</option>
+                        <option value="01">Adana</option>
+                        <option value="02">Adıyaman</option>
+                        <option value="03">Afyon</option>
+                        <option value="04">Ağrı</option>
+                        <option value="05">Amasya</option>
+                        <option value="06">Ankara</option>
+                    </select>
+    
+                    <select name="ulke" id="ulkeler">
+                        <option value="sehirSec">Ülke Seçiniz</option>
+                        <option value="turkey">Türkiye</option>
+                        <option value="USA">ABD</option>
+                        <option value="brasil">Brezilya</option>
+                        <option value="china">Çin</option>
+                        <option value="japan">Japonya</option>
+                        <option value="africa">Afrika</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="diger">
+                <form action="php.php">
+                    <input type="text" required placeholder="Kullanıcı Adı.."><br>
+                    <input type="password" required placeholder="Şifre.."><br>
+                    <input type="password" required placeholder="Şifre Tekrar..">
+                </form>
+            </div>
+
+        </div><!--Formlar-->
+
+        <input class="buton" type="submit" value="Kayıt Ol">
+    </div>
+</body>
+</html>
